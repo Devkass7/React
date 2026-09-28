@@ -1,4 +1,7 @@
 import {createRoot} from "react-dom/client"
+
+import Header from "./components/Header"
+import { StrictMode } from "react"
 /**
  * Challenge:
  * 
@@ -11,4 +14,8 @@ import {createRoot} from "react-dom/client"
  */
 
 const root = createRoot(document.getElementById("root"))
-root.render(/* Render App component here*/)
+root.render(
+    <StrictMode>
+        <Header />
+    </StrictMode>
+)
