@@ -13,3 +13,16 @@
  *   currently are, so don't worry about the fact that you're hard-coding all
  *   this data into the component.
  */
+
+
+function Entry(){
+    return(
+        <main>
+            <h2></h2>
+            <div>
+                <img src="./images/marker.png" alt="contry mark" />
+            </div>
+            <div></div>
+        </main>
+    )
+}
