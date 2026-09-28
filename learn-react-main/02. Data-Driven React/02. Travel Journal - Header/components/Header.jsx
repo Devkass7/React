@@ -1,10 +1,13 @@
+import "./header.css"
 
 function Header(){
     return(
-        <>
-        <img src="../assets/globeb.png" alt="picture of the Globe" />
+        <header>
+        <img src="../assets/globe.png" alt="picture of the Globe" />
         <h1>my travel journal</h1>
-        </>
+        </header>
+       
+       
     )
 }
 
