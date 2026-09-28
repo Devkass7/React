@@ -6,96 +6,32 @@
  *     - Think ahead: what's the problem with doing it this way?
  */
 
-function App() {
+function App(props) {
     return (
         <div className="contacts">
             <article className="contact-card">
                 <img 
-                    src="./images/mr-whiskerson.png"
-                    alt="Photo of Mr. Whiskerson"
+                    src="{props.img}"
+                    alt="Photo of {props.title}"
                 />
-                <h3>Mr. Whiskerson</h3>
+                <h3>{props.title}</h3>
                 <div className="info-group">
                     <img 
-                        src="./images/phone-icon.png" 
+                        src="{props.phoneImg}" 
                         alt="phone icon" 
                     />
-                    <p>(212) 555-1234</p>
+                    <p>{props.phone}</p>
                 </div>
                 <div className="info-group">
                     <img 
-                        src="./images/mail-icon.png" 
+                        src="{props.emailImg}" 
                         alt="mail icon"
                     />
-                    <p>mr.whiskaz@catnap.meow</p>
+                    <p>{props.email}</p>
                 </div>
             </article>
             
-            <article className="contact-card">
-                <img 
-                    src="./images/fluffykins.png"
-                    alt="Photo of Fluffykins"
-                />
-                <h3>Fluffykins</h3>
-                <div className="info-group">
-                    <img 
-                        src="./images/phone-icon.png" 
-                        alt="phone icon" 
-                    />
-                    <p>(212) 555-2345</p>
-                </div>
-                <div className="info-group">
-                    <img 
-                        src="./images/mail-icon.png" 
-                        alt="mail icon"
-                    />
-                    <p>fluff@me.com</p>
-                </div>
-            </article>
             
-            <article className="contact-card">
-                <img 
-                    src="./images/felix.png"
-                    alt="Photo of Felix"
-                />
-                <h3>Felix</h3>
-                <div className="info-group">
-                    <img 
-                        src="./images/phone-icon.png" 
-                        alt="phone icon" 
-                    />
-                    <p>(212) 555-4567</p>
-                </div>
-                <div className="info-group">
-                    <img 
-                        src="./images/mail-icon.png" 
-                        alt="mail icon"
-                    />
-                    <p>thecat@hotmail.com</p>
-                </div>
-            </article>
-            
-            <article className="contact-card">
-                <img 
-                    src="./images/pumpkin.png"
-                    alt="Photo of Pumpkin"
-                />
-                <h3>Pumpkin</h3>
-                <div className="info-group">
-                    <img 
-                        src="./images/phone-icon.png" 
-                        alt="phone icon" 
-                    />
-                    <p>(0800) CAT KING</p>
-                </div>
-                <div className="info-group">
-                    <img 
-                        src="./images/mail-icon.png" 
-                        alt="mail icon"
-                    />
-                    <p>pumpkin@scrimba.com</p>
-                </div>
-            </article>
             
         </div>
     )
