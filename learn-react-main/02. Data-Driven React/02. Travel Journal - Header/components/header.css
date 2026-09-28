@@ -6,6 +6,9 @@ header{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin: 10px;
+    border-radius: 16px 16px 0 0;
+    
 
 
     img{
