@@ -4,15 +4,15 @@ export default function Entry(props) {
             <div className="main-image-container">
                 <img 
                     className="main-image"
-                    src={props.mainsrc}
-                    alt={props.mainalt}
+                    src={props.mainimg.src}
+                    alt={props.mainimg.alt}
                 />
             </div>
             <div className="info-container">
                 <img 
                     className="marker"
-                    src={props.markersrc} 
-                    alt={props.markeralt}
+                    src={props.img.src} 
+                    alt={props.img.alt}
                 />
                 <span className="country">{props.country}</span>
                 <a href= {props.maps}>View on Google Maps</a>
