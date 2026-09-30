@@ -9,12 +9,17 @@ export default function App() {
      * the jokes show up on the page again
      */
     
-    const jokeElements = jokesData.map((joke) => {
-        return <Joke  />
+    const jokeElements = jokesData.map(joke => {
+        return (
+        <Joke setup = {joke.setup} punchline = {joke.punchline}/>
+    )
     })
+
+    
+
     return (
         <main>
-            
+           {jokeElements}
         </main>
     )
 }
