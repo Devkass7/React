@@ -9,12 +9,8 @@ export default function App() {
     const journalElement = data.map(el => {
        return (
         <Entry 
-        img ={el.img} 
-        country={el.country}
-        title = {el.title}
-        dates={el.dates}
-        text={el.text}
-        googleMapsLink = {el.googleMapsLink}
+        key={el.id}
+        {...el}
         />
        )
     })
