@@ -6,11 +6,13 @@ export default function App() {
      *   boolean value (true -> false, false -> true)
      * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
      */
+    
+
 
     return (
         <main>
             <h1 className="title">Do I feel like going out tonight?</h1>
-            <button className="value">Yes</button>
+            <button className="value">NO</button>
         </main>
     )
 }
