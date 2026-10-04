@@ -22,7 +22,7 @@ const [myFavoriteThings, setMyFavoriteThings] = useState([])
 
     setMyFavoriteThings((prev) =>{
       return(
-        [...prev]
+        [...prev, "test"]
       )
     })
   }
