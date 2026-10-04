@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 
 export default function App() {
@@ -33,4 +34,30 @@ export default function App() {
             <button onClick={clickHandler} className="value">{answer}</button>
         </main>
     )
+=======
+import {useState} from "react"
+
+export default function App() {
+  
+
+const [isGoingOut, setIsGoingOut] = useState(true)
+
+  let answer = isGoingOut ? "Yes" : "No"
+
+  
+function clickHandler(){
+  setIsGoingOut((prev) =>{
+    return !prev
+  })
+}
+
+  
+ 
+  return (
+    <main>
+      <h1 className="title">Do I feel like going out tonight?</h1>
+      <button onClick ={clickHandler}  className="value">{answer}</button>
+    </main>
+  );
+>>>>>>> 190673b0ba71a0826f46c07c2fc147e7a921957c
 }
