@@ -26,7 +26,7 @@ export default function Main() {
         const newIngredient = formData.get("ingredient")
 
         
-        setFoodIngredient((prev) => 
+        setIngredient((prev) => 
            [...prev, newIngredient]
         )
 
