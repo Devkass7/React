@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+import { useState } from "react";
+
 export default function App() {
     /**
      * Challenge: 
@@ -6,11 +9,55 @@ export default function App() {
      *   boolean value (true -> false, false -> true)
      * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
      */
+   
+    const[isGoingOut, setIsGoingOut] = useState(true)
+
+    let answer = isGoingOut ? "Yes" : "No"
+
+    function clickHandler(){
+        setIsGoingOut((prev) => {
+            return !prev
+        })
+    }
+   
+
+
+
+
+
+
+
 
     return (
         <main>
             <h1 className="title">Do I feel like going out tonight?</h1>
-            <button className="value">Yes</button>
+            <button onClick={clickHandler} className="value">{answer}</button>
         </main>
     )
+=======
+import {useState} from "react"
+
+export default function App() {
+  
+
+const [isGoingOut, setIsGoingOut] = useState(true)
+
+  let answer = isGoingOut ? "Yes" : "No"
+
+  
+function clickHandler(){
+  setIsGoingOut((prev) =>{
+    return !prev
+  })
+}
+
+  
+ 
+  return (
+    <main>
+      <h1 className="title">Do I feel like going out tonight?</h1>
+      <button onClick ={clickHandler}  className="value">{answer}</button>
+    </main>
+  );
+>>>>>>> 190673b0ba71a0826f46c07c2fc147e7a921957c
 }
