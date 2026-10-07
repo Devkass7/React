@@ -10,9 +10,14 @@ export default function App() {
      * - If there are > 1 unread messages, display "You have <n> unread
      *   messages" (plural)
      */
+
+    function messageHandler(){
+        setMessages([])
+    }
+
     return (
         <div>
-            <h1></h1>
+            <h1>{messages.length < 0} ? "You're all caught up!" : {messages.length === 1} ? "You have 1 unread message" : "You have {messages.length} unread messages"</h1>
         </div>
     )
 }
