@@ -10,10 +10,10 @@ export default function Main() {
 
    
 
-    const ingredients = ["Chicken", "Oregano", "Tomatoes"]
-     const [foodIngredient, setFoodIngredient] = useState(ingredients)
+    const [ingredients, setIngredients] = useState([])
+     
 
-    const ingredientsListItems = foodIngredient.map(ingredient => (
+    const ingredientsListItems = ingredients.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
     ))
 
@@ -26,7 +26,7 @@ export default function Main() {
         const newIngredient = formData.get("ingredient")
 
         
-        setFoodIngredient((prev) => 
+        setIngredients((prev) => 
            [...prev, newIngredient]
         )
 
