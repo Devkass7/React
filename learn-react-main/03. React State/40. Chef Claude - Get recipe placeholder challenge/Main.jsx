@@ -22,7 +22,7 @@ export default function Main() {
      */
 
     function clickHandler(){
-        setRecipeShown(prev => !prev)
+        setRecipeShown(true)
     }
 
     const ingredientsListItems = ingredients.map(ingredient => (
