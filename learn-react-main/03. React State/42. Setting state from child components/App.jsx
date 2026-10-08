@@ -47,7 +47,7 @@ export default function App() {
                         aria-label={contact.isFavorite ? "Remove from favorites" : "Add to favorites"}
                         className="favorite-button"
                     >
-                       <Star details = {contact}/>
+                       <Star fav = {contact.isFavorite}/>
 
                     </button>
                     <h2 className="name">
