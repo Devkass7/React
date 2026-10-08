@@ -31,7 +31,7 @@ export default function Main() {
                 <button>Add ingredient</button>
             </form>
             <section>
-             { ingredients.length > 2 &&   <h2>Ingredients on hand:</h2>}
+             { ingredients.length > 0 &&   <h2>Ingredients on hand:</h2>}
                 <ul className="ingredients-list" aria-live="polite">{ingredientsListItems}</ul>
 
                {ingredients.length > 2 &&  <div className="get-recipe-container">
