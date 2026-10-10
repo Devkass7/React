@@ -4,9 +4,28 @@ import Pad from "./Pad"
 
 export default function App() {
     const [pads, setPads] = React.useState(padsData)
-    
-    function toggle(id) {
-        console.log(id)
+
+
+function toggle(id) {
+
+  setPads(prePads => prePads.map(pad => {
+        if(id === pad.id){
+            return {
+                ...pad, on:!pad.on
+            } 
+        }else{
+            return pad
+            
+        }
+    }
+)
+
+)
+
+
+        
+
+
         /**
          * Challenge:
          * Call setPads to update the state of the one pad that was
@@ -17,6 +36,8 @@ export default function App() {
          * Otherwise (if the ids don't match), just return the previous
          * item as it was, unchanged.
          */
+
+        
     }
     
     const buttonElements = pads.map(pad => (
