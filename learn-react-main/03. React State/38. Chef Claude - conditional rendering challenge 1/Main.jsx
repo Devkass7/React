@@ -31,15 +31,25 @@ export default function Main() {
                 <button>Add ingredient</button>
             </form>
             <section>
+<<<<<<< HEAD
                { ingredientsListItems.length < 0 ? <h2>Ingredients on hand:</h2> : null}
+=======
+             { ingredients.length > 0 &&   <h2>Ingredients on hand:</h2>}
+>>>>>>> 997c436219825c974818c9f06cd2eeb7719113e7
                 <ul className="ingredients-list" aria-live="polite">{ingredientsListItems}</ul>
-                <div className="get-recipe-container">
-                    <div>
+
+               {ingredients.length > 2 &&  <div className="get-recipe-container">
+               <div>
                         <h3>Ready for a recipe?</h3>
                         <p>Generate a recipe from your list of ingredients.</p>
                     </div>
+<<<<<<< HEAD
                    {ingredientsListItems.length < 0 ? <button>Get a recipe</button> : null}
                 </div>
+=======
+                    <button>Get a recipe</button>
+                </div>}
+>>>>>>> 997c436219825c974818c9f06cd2eeb7719113e7
             </section>
         </main>
     )

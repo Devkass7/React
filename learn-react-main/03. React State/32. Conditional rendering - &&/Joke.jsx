@@ -21,7 +21,11 @@ export default function Joke(props) {
         {isShown ? "Hide Punchline" : "Show Punchline"}
       </button>
       <div>
+<<<<<<< HEAD
         {isShown ? <p className="punchline">{props.punchline}</p> : null}
+=======
+        {isShown && <p className="punchline">{props.punchline}</p>}
+>>>>>>> 997c436219825c974818c9f06cd2eeb7719113e7
         <hr />
       </div>
     </>
