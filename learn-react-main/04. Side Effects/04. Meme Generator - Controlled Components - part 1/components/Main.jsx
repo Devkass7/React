@@ -15,6 +15,15 @@ export default function Main() {
          * 
          * Note: don't worry about bottomText at this point.
          */
+        // console.log(value);
+
+        setMeme(prev =>{
+            return {
+                ...prev, topText:value
+            }
+        })
+        
+      
     }
 
     return (
