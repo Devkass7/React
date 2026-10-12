@@ -33,16 +33,15 @@ export default function Main() {
         <button>Get a new meme image 🖼</button>
       </div>
 
-      {memeText ? (
+      {memeText &&
         <>
-          {" "}
           <div className="meme">
             <img src="http://i.imgflip.com/1bij.jpg" />
             <span className="top">{text.topText}</span>
             <span className="bottom">{text.buttomText}</span>
           </div>
         </>
-      ) : null}
+       }
     </main>
   );
 }
